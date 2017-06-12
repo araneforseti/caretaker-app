@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import EventGateway from './gateway.js';
-import EventList from './EventList.js';
+import EventGateway from '../gateway.js';
+import EventList from '../EventList.js';
 
 export default class UnassignedEventListContainer extends Component {
   constructor() {

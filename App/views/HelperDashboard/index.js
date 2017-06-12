@@ -5,8 +5,8 @@ import {
   Text,
   View
 } from 'react-native';
-import AssignedEventListContainer from '../../components/EventList/AssignedEventListContainer.js';
-import UnassignedEventListContainer from '../../components/EventList/UnassignedEventListContainer.js';
+import AssignedEventListContainer from '../../components/EventList/container/AssignedEventList.js';
+import UnassignedEventListContainer from '../../components/EventList/container/UnassignedEventList.js';
 
 export default class HelperDashboard extends Component {
   static navigationOptions = {
