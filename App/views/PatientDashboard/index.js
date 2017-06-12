@@ -5,7 +5,7 @@ import {
   Text,
   View
 } from 'react-native';
-import EventListContainer from '../../components/EventList/';
+import EventListContainer from '../../components/EventList/EventListContainer.js';
 
 export default class PatientDashboard extends Component {
   static navigationOptions = {

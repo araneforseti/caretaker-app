@@ -5,7 +5,7 @@ import {
   Text,
   View
 } from 'react-native';
-import UnassignedEventListContainer from '../../components/UnassignedEventList/';
+import UnassignedEventListContainer from '../../components/EventList/UnassignedEventListContainer.js';
 
 export default class AdminDashboard extends Component {
   static navigationOptions = {
