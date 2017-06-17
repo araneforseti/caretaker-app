@@ -82,6 +82,9 @@ export default class EventModal extends Component {
     };
 
     render() {
+        if(this.props.event === null) {
+            return null;
+        }
         return (
             <Modal visible={this.props.visible}
                 animationType={"fade"}

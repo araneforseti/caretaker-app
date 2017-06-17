@@ -6,7 +6,9 @@ export var ContainerFor = (EventList) => class extends Component {
     constructor() {
         super();
         this.state = {
-            events: []
+            events: [],
+            visibleModal: false,
+            selectedEvent: null
         };
     }
 
@@ -16,7 +18,26 @@ export var ContainerFor = (EventList) => class extends Component {
         this.setState({events: events});
     }
 
+    _onPressItem = (eventItem) => {
+        let newState = this.state;
+        newState.visibleModal = true;
+        newState.selectedEvent = eventItem
+        this.setState(newState);
+    };
+
+    _onCloseModal = () => {
+        let newState = this.state;
+        newState.visibleModal = false;
+        this.setState(newState);
+    }
+
     render() {
-        return <EventList events={this.state.events} />;
+        return <EventList
+            events={this.state.events}
+            visibleModal={this.state.visibleModal}
+            selectedEvent={this.state.selectedEvent}
+            onPressItem={this._onPressItem}
+            onCloseModal={this._onCloseModal}
+        />;
     }
 }
