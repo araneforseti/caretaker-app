@@ -10,14 +10,13 @@ import EventGateway from '../../gateway/event.js'
 export default class UnassignedEventListContainer extends Component {
   constructor() {
     super();
-    this.gateway = new EventGateway();
     this.state = {
       events: []
     };
   }
 
   componentDidMount() {
-    this.setState({events: this.gateway.getAll()});
+    this.setState({events: EventGateway.getAll()});
   }
 
   getUnassigned() {
