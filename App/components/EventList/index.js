@@ -51,6 +51,7 @@ class EventList extends Component {
                    data={this.props.events}
                    dataWhichCouldChange={this.props.events.map((event) => event.volunteer)}
                    renderItem={this._renderItem}
+                   keyExtractor={(item) => item.id}
                 />
             </View>
         );
