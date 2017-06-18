@@ -25,10 +25,10 @@ export var ContainerFor = (EventList) => class extends Component {
         this.updateEvents();
     }
 
-    _onPressItem = (eventItem) => {
+    _onPressItem = (eventId) => {
         let newState = this.state;
         newState.visibleModal = true;
-        newState.selectedEvent = eventItem
+        newState.selectedEvent = newState.events.find((event) => event.id === eventId)
         this.setState(newState);
     };
 

@@ -11,15 +11,14 @@ import EventModal from '../shared/EventModal/';
 
 class MyListItem extends PureComponent {
     _onPress = () => {
-        this.props.onPressItem(this.props.item);
+        this.props.onPressItem(this.props.id);
     };
 
     render() {
-        item = this.props.item;
         return (
             <TouchableOpacity onPress={this._onPress}>
                 <View style={styles.button}>
-                   <Text style={styles.item}>{item.date}: {item.name} - {item.volunteer}</Text>
+                   <Text style={styles.item}>{this.props.date}: {this.props.name} - {this.props.volunteer}</Text>
                 </View>
             </TouchableOpacity>
         );
@@ -30,10 +29,12 @@ class EventList extends Component {
 
     _renderItem = ({item}) => (
         <MyListItem
-            id={item.key}
-            item={item}
+            id={item.id}
             onPressItem={this.props.onPressItem}
             title={item.title}
+            date={item.date}
+            name={item.name}
+            volunteer={item.volunteer}
         />
     );
 
@@ -48,6 +49,7 @@ class EventList extends Component {
                 <Text style={styles.title}>Upcoming Events</Text>
                 <FlatList
                    data={this.props.events}
+                   dataWhichCouldChange={this.props.events.map((event) => event.volunteer)}
                    renderItem={this._renderItem}
                 />
             </View>
