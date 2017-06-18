@@ -8,9 +8,9 @@ import {
     TouchableOpacity,
     View
 } from 'react-native';
-import UserGateway from '../../../gateway/user.js';
+import {ContainerFor} from './container.js';
 
-export default class EventModal extends Component {
+class EventModal extends Component {
     _renderButton = (text, onPress) => (
         <TouchableOpacity onPress={onPress}>
             <View style={styles.button}>
@@ -19,46 +19,28 @@ export default class EventModal extends Component {
         </TouchableOpacity>
     );
 
-    _onPickUpEvent = () => alert('volunteered!');
-
-    _onDropEvent = () => alert('un-volunteered :(');
-
-    _onEditEvent = () => alert('edited!');
-
-    _onExportToCalendar = () => alert('exported!');
-
-    _renderPickUpEventbutton = (volunteer) => {
-        if(volunteer === 'TBD') {
-            return this._renderButton('[pick up event]', this._onPickUpEvent);
+    _renderPickUpEventbutton = () => {
+        if(this.props.isVolunteerNeeded) {
+            return this._renderButton('[pick up event]', this.props.onPickUpEvent);
         } else {
             return null;
         }
     }
 
-    _renderDropEventButton = (volunteerId) => {
-        if(UserGateway.isSelf(volunteerId)) {
-            return this._renderButton('[drop event]', this._onDropEvent);
+    _renderDropEventButton = () => {
+        if(this.props.isVolunteerSelf) {
+            return this._renderButton('[drop event]', this.props.onDropEvent);
         } else {
             return null;
         }
     }
 
-    _renderEditEventButton = (volunteerId) => {
-        if(UserGateway.isAdmin(volunteerId)) {
-            return this._renderButton('[edit event]', this._onEditEvent);
+    _renderEditEventButton = () => {
+        if(this.props.isVolunteerAdmin) {
+            return this._renderButton('[edit event]', this.props.onEditEvent);
         } else {
             return null;
         }
-    }
-
-    _renderVolunteerInfo = (role, volunteer, volunteerId) => {
-        return (
-            <View>
-                <Text style={styles.modalInfo}>{role}:{volunteer}</Text>
-                {this._renderPickUpEventbutton(volunteerId)}
-                {this._renderDropEventButton(volunteerId)}
-            </View>
-        );
     }
 
     _renderModalContent = () => {
@@ -66,25 +48,25 @@ export default class EventModal extends Component {
         const event = props.event;
         return (
             <View style={styles.modalContent}>
-            {this._renderEditEventButton(event.volunteer)}
-            {this._renderButton('[Export to Calendar]', this._onExportToCalendar)}
-            <Text style={styles.modalTitle}>{event.name}</Text>
+                {this._renderEditEventButton(event.volunteer)}
+                {this._renderButton('[Export to Calendar]', this.props.onExportToCalendar)}
 
-            <Text style={styles.modalInfo}>{event.date} {event.time}</Text>
-            <Text style={styles.modalInfo}>{event.location}</Text>
+                <Text style={styles.modalTitle}>{event.name}</Text>
+                <Text style={styles.modalInfo}>{event.date} {event.time}</Text>
+                <Text style={styles.modalInfo}>{event.location}</Text>
+                <Text style={styles.modalInfo}>{event.role}:{event.volunteer}</Text>
 
-            {this._renderVolunteerInfo(event.role, event.volunteer, event.volunteerId)}
+                {this._renderPickUpEventbutton()}
+                {this._renderDropEventButton()}
 
-            <Text style={styles.modalInfo}>{event.description}</Text>
-            {this._renderButton('Close', props.close)}
+                <Text style={styles.modalInfo}>{event.description}</Text>
+
+                {this._renderButton('Close', props.onClose)}
             </View>
         );
     };
 
     render() {
-        if(this.props.event === null) {
-            return null;
-        }
         return (
             <Modal visible={this.props.visible}
                 animationType={"fade"}
@@ -95,6 +77,8 @@ export default class EventModal extends Component {
         );
   }
 }
+
+export default ContainerFor(EventModal);
 
 const styles = StyleSheet.create({
   modalContent: {

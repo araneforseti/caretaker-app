@@ -43,7 +43,7 @@ class EventList extends Component {
                 <EventModal
                     event={this.props.selectedEvent}
                     visible={this.props.visibleModal}
-                    close={this.props.onCloseModal}
+                    onClose={this.props.onCloseModal}
                 />
                 <Text style={styles.title}>Upcoming Events</Text>
                 <FlatList
