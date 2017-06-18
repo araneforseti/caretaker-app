@@ -10,7 +10,6 @@ import EventGateway from '../../gateway/event.js'
 export default class AssignedEventListContainer extends Component {
   constructor() {
     super();
-    this.gateway = new EventGateway();
     this.state = {
       events: []
     };
@@ -18,7 +17,7 @@ export default class AssignedEventListContainer extends Component {
   }
 
   componentDidMount() {
-    this.setState({events: this.gateway.getAll()});
+    this.setState({events: this.EventGateway.getAll()});
   }
 
   getAssignedTo(volunteerName) {

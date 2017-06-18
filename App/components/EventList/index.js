@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, PureComponent} from 'react';
 import {
     FlatList,
     StyleSheet,
@@ -9,48 +9,32 @@ import {
 import {ContainerFor} from './container.js';
 import EventModal from '../shared/EventModal/';
 
-class MyListItem extends React.PureComponent {
+class MyListItem extends PureComponent {
     _onPress = () => {
-        this.props.onPressItem(this.props.item);
+        this.props.onPressItem(this.props.id);
     };
 
     render() {
-        item = this.props.item
         return (
             <TouchableOpacity onPress={this._onPress}>
                 <View style={styles.button}>
-                   <Text style={styles.item}>{item.date}: {item.name} - {item.volunteer}</Text>
+                   <Text style={styles.item}>{this.props.date}: {this.props.name} - {this.props.volunteer}</Text>
                 </View>
             </TouchableOpacity>
-        )
+        );
     }
 }
 
 class EventList extends Component {
-    constructor() {
-        super();
-        this.state = {
-            visibleModal: false,
-            event: {key: 1, date: 'July 1', time: '13:00-14:00', location: '6818 Austin Center Blvd, Austin, TX 78731', name: 'Chemotherapy', volunteer: 'Jack', role: 'driver', description: ''},
-        };
-    }
-
-    _onPressItem = (eventItem) => {
-        this.setState({ visibleModal: true, event: eventItem});
-    };
-
-    _onCloseModal = () => {
-        let newState = this.state;
-        newState.visibleModal = false;
-        this.setState(newState);
-    }
 
     _renderItem = ({item}) => (
         <MyListItem
-            id={item.key}
-            item={item}
-            onPressItem={this._onPressItem}
+            id={item.id}
+            onPressItem={this.props.onPressItem}
             title={item.title}
+            date={item.date}
+            name={item.name}
+            volunteer={item.volunteer}
         />
     );
 
@@ -58,17 +42,16 @@ class EventList extends Component {
         return (
             <View style={styles.container}>
                 <EventModal
-                    event={this.state.event}
-                    visible={this.state.visibleModal}
-                    close={this._onCloseModal}
-                    edit={this._onEditEvent}
-                    exportToCalendar={this._onExportToCalendar}
+                    event={this.props.selectedEvent}
+                    visible={this.props.visibleModal}
+                    onClose={this.props.onCloseModal}
                 />
                 <Text style={styles.title}>Upcoming Events</Text>
                 <FlatList
                    data={this.props.events}
-                   extraData={this.state}
+                   dataWhichCouldChange={this.props.events.map((event) => event.volunteer)}
                    renderItem={this._renderItem}
+                   keyExtractor={(item) => item.id}
                 />
             </View>
         );
