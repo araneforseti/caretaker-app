@@ -8,14 +8,21 @@ export var ContainerFor = (EventList) => class extends Component {
         this.state = {
             events: [],
             visibleModal: false,
-            selectedEvent: null
+            selectedEvent: null,
         };
+        EventGateway.subscribeToUpdates(this.updateEvents);
+    }
+
+    updateEvents = () => {
+        let events = EventGateway.getAll();
+        events.forEach((event) => event.volunteer = UserGateway.getName(event.volunteerId));
+        let newState = Object.assign({}, this.state);
+        newState.events = events;
+        this.setState(newState);
     }
 
     componentDidMount() {
-        let events = EventGateway.getAll()
-        events.forEach((event) => event.volunteer = UserGateway.getName(event.volunteerId));
-        this.setState({events: events});
+        this.updateEvents();
     }
 
     _onPressItem = (eventItem) => {

@@ -1,9 +1,13 @@
 import React, {Component} from 'react';
 import UserGateway from '../../../gateway/user.js';
+import EventGateway from '../../../gateway/event.js';
 
 export var ContainerFor = (EventModal) => class extends Component {
 
-    _onPickUpEvent = () => alert('volunteered!');
+    _onPickUpEvent = () => {
+        EventGateway.pickUpEvent(this.props.event.id, UserGateway.currentUser.identifier);
+        alert('volunteered!');
+    };
 
     _onDropEvent = () => alert('un-volunteered :(');
 
