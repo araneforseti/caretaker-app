@@ -27,12 +27,19 @@ export default class EventGateway {
     static pickUpEvent(eventId, volunteerId) {
         let event = this.allEvents.find((event) => event.id === eventId)
         event.volunteerId = volunteerId;
-        //api call to update event
+        //api call to update event by id
         this.notifySubscribers();
     }
 
-    static subscribeToUpdates(component) {
-        this.subscribers.push(component);
+    static dropEvent(eventId) {
+        let event = this.allEvents.find((event) => event.id === eventId)
+        event.volunteerId = 'TBD';
+        //api call to update event by id
+        this.notifySubscribers();
+    }
+
+    static subscribeToUpdates(callback) {
+        this.subscribers.push(callback);
     }
 
     static notifySubscribers() {

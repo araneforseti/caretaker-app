@@ -6,10 +6,11 @@ export var ContainerFor = (EventModal) => class extends Component {
 
     _onPickUpEvent = () => {
         EventGateway.pickUpEvent(this.props.event.id, UserGateway.currentUser.identifier);
-        alert('volunteered!');
     };
 
-    _onDropEvent = () => alert('un-volunteered :(');
+    _onDropEvent = () => {
+        EventGateway.dropEvent(this.props.event.id);
+    }
 
     _onEditEvent = () => alert('edited!');
 
