@@ -18,7 +18,7 @@ describe('EventList', () => {
     });
 
     it('should subscribe to updates from the event gateway', () => {
-        const spy = jest.spyOn(EventGateway, 'subscribeToUpdates');
+        const spy = jest.spyOn(EventGateway, 'subscribe');
 
         const list = renderer
             .create(<EventList />)

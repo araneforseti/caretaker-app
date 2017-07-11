@@ -1,0 +1,320 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Announcements Screen snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F5FCFF",
+      "flex": 1,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 24,
+        "margin": 15,
+        "textAlign": "center",
+      }
+    }
+  >
+    Announcements
+  </Text>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "date": "2017-04-30T19:00:00-05:00",
+          "description": "Woo, go us",
+          "id": 1,
+          "title": "1st Treatment Success",
+        },
+        Object {
+          "date": "2017-05-04T19:00:00-05:00",
+          "description": "Boo",
+          "id": 2,
+          "title": "2nd Treatment Delayed",
+        },
+        Object {
+          "date": "2017-05-06T19:00:00-05:00",
+          "description": "Send lemons",
+          "id": 3,
+          "title": "Need Help",
+        },
+        Object {
+          "date": "2017-05-06T19:00:00-05:00",
+          "description": "It's very complicated, and I'm not sure exactly how to put it into words, but if I had to approximate it, I would probably first request a piping cup of tea and some crackers, as it would take some time and I would be loath to do my description a disservice by unduly interrupting it with breaks for necessaries.
+      
+      Then, with the implements of storytelling in hand, I would proceed to warm up with an oh-so-brief description of the setting, of that hot summer day on which my conundrum began. It's very important for you, or anyone else who listens to my tale, to understand the environment in which these events took place, otherwise true understanding will evade you. I would say that in order to transfer the feelings and emotions that I have built up around these happenings, the listener themselves must prepare to embark on a journey, and thus procure for themselves their own tea.",
+          "id": 4,
+          "title": "I have a need",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onContentSizeChange={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onViewableItemsChanged={undefined}
+    removeClippedSubviews={true}
+    renderItem={[Function]}
+    renderScrollComponent={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "margin": 10,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "marginTop": 10,
+              }
+            }
+          >
+            1st Treatment Success
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
+            fake date
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
+            Woo, go us
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "margin": 10,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "marginTop": 10,
+              }
+            }
+          >
+            2nd Treatment Delayed
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
+            fake date
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
+            Boo
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "margin": 10,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "marginTop": 10,
+              }
+            }
+          >
+            Need Help
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
+            fake date
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
+            Send lemons
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "margin": 10,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "marginTop": 10,
+              }
+            }
+          >
+            I have a need
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
+            fake date
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
+            It's very complicated, and I'm not sure exactly how to put it into words, but if I had to approximate it, I would probably first request a piping cup of tea and some crackers, as it would take some time and I would be loath to do my description a disservice by unduly interrupting it with breaks for necessaries.
+            
+            Then, with the implements of storytelling in hand, I would proceed to warm up with an oh-so-brief description of the setting, of that hot summer day on which my conundrum began. It's very important for you, or anyone else who listens to my tale, to understand the environment in which these events took place, otherwise true understanding will evade you. I would say that in order to transfer the feelings and emotions that I have built up around these happenings, the listener themselves must prepare to embark on a journey, and thus procure for themselves their own tea.
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      />
+    </View>
+  </RCTScrollView>
+  <ActionButton
+    onPress={[Function]}
+  />
+</View>
+`;

@@ -2,38 +2,53 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
-  View
+  View,
+  FlatList,
+  TouchableOpacity
 } from 'react-native';
+import ContainerFor from './container.js';
+import renderIf from '../../utils/renderif.js';
+import { ActionButton } from 'react-native-material-ui';
 
-export default class Announcements extends Component {
-    constructor() {
-        super();
-        this.state = {
-            screen: null
-        }
-    }
 
-    componentDidMount() {
+const ListItem = (props) => (
+    <TouchableOpacity style={styles.announcementContainer} onPress={props.onEditAnnouncement}>
+        <Text style={styles.announcementTitle}>{props.title}</Text>
+        <Text>{new Date(props.date).toDateString()}</Text>
+        <Text>{props.description}</Text>
+    </TouchableOpacity>
+)
 
-    }
+const Announcements = (props) => {
 
-    static navigationOptions = {
-        title: 'Announcements Screen'
-    };
+    const _renderItem = ({item}) => (
+        <ListItem
+            title={item.title}
+            date={item.date}
+            description={item.description}
+            onEditAnnouncement={props.onEditAnnouncement}
+        />
+    )
 
-    render() {
-        return (
-            <View style={{
-                flex: 1,
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}>
-                <Text>Insert Announcements Here</Text>
-            </View>
-        );
-    }
+    const addAnnouncementButton = renderIf(props.isUserAdmin,
+        <ActionButton onPress={props.onAddAnnouncement} />
+    );
+
+    return (
+        <View style={styles.container}>
+            <Text style={styles.title}>Announcements</Text>
+            <FlatList
+               data={props.announcements}
+               renderItem={_renderItem}
+               keyExtractor={(item) => item.id}
+               removeClippedSubviews={true}
+            />
+            {addAnnouncementButton}
+        </View>
+    );
 }
+
+export default ContainerFor(Announcements);
 
 const styles = StyleSheet.create({
   button: {
@@ -49,4 +64,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 15,
   },
+  announcementContainer: {
+      margin: 10
+  },
+  announcementTitle: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      marginTop: 10,
+  }
 });

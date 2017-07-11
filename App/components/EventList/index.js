@@ -66,6 +66,7 @@ class EventList extends Component {
                    dataWhichCouldChange={this.props.events.map((event) => event.volunteer)}
                    renderItem={this._renderItem}
                    keyExtractor={(item) => item.id}
+                   removeClippedSubviews={true}
                 />
                 <ActionButton onPress={this._onCreateEvent} />
             </View>

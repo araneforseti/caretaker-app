@@ -10,7 +10,7 @@ export var ContainerFor = (EventList) => class extends Component {
             visibleModal: false,
             selectedEvent: null,
         };
-        EventGateway.subscribeToUpdates(this.updateEvents);
+        EventGateway.subscribe(this.updateEvents);
     }
 
     updateEvents = () => {
@@ -23,6 +23,10 @@ export var ContainerFor = (EventList) => class extends Component {
 
     componentDidMount() {
         this.updateEvents();
+    }
+
+    componentWillUnmount() {
+        EventGateway.unsubscribe(this.updateEvents);
     }
 
     _onPressItem = (eventId) => {
@@ -39,7 +43,6 @@ export var ContainerFor = (EventList) => class extends Component {
     }
 
     _onCreateEvent = (data) => {
-      alert('hi');
       EventGateway.createNewEvent(data);
     }
 
