@@ -1,0 +1,302 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EventList /> should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "date": "Jul 10",
+          "endDate": 1499749200000,
+          "id": 1,
+          "name": "Chemotherapy",
+          "startDate": 1499662800000,
+          "volunteer": "The Dude",
+        },
+        Object {
+          "date": "Jul 10",
+          "endDate": 1499749200000,
+          "id": 2,
+          "name": "Toxicity Check",
+          "startDate": 1499662800000,
+          "volunteer": "Waluigi",
+        },
+      ]
+    }
+    dataWhichCouldChange={
+      Array [
+        "The Dude",
+        "Waluigi",
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onContentSizeChange={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onViewableItemsChanged={undefined}
+    removeClippedSubviews={true}
+    renderItem={[Function]}
+    renderScrollComponent={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "backgroundColor": "#FFF",
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginBottom": 0,
+                "marginLeft": 8,
+                "marginRight": 8,
+                "marginTop": 8,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "padding": 4,
+                  "width": 56,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontSize": 24,
+                  }
+                }
+              >
+                10
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={Object {}}
+              >
+                Mon
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "borderColor": "#CC5D5D",
+                    "borderRadius": 2,
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "flex": 1,
+                    "padding": 4,
+                  },
+                ]
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#CC5D5D",
+                    },
+                    Object {
+                      "fontWeight": "bold",
+                    },
+                  ]
+                }
+              >
+                Chemotherapy
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#CC5D5D",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                The Dude
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "marginBottom": 0,
+                "marginLeft": 8,
+                "marginRight": 8,
+                "marginTop": 8,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "padding": 4,
+                  "width": 56,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontSize": 24,
+                  }
+                }
+              >
+                10
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={Object {}}
+              >
+                Mon
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "borderColor": "#CC5D5D",
+                    "borderRadius": 2,
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "flex": 1,
+                    "padding": 4,
+                  },
+                ]
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#CC5D5D",
+                    },
+                    Object {
+                      "fontWeight": "bold",
+                    },
+                  ]
+                }
+              >
+                Toxicity Check
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#CC5D5D",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                Waluigi
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

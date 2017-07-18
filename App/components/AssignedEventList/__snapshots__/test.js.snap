@@ -4,125 +4,317 @@ exports[`AssignedEventListContainer should render correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#F5FCFF",
       "flex": 1,
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <View
     style={
       Object {
-        "fontSize": 24,
-        "margin": 15,
-        "textAlign": "center",
+        "flex": 1,
       }
     }
   >
-    Assigned Upcoming Events
-  </Text>
-  <RCTScrollView
-    data={
-      Array [
-        Object {
-          "date": "July 3rd",
-          "description": "Quick check",
-          "endDate": 1499101200000,
-          "id": 2,
-          "location": "6818 Austin Center Blvd, Austin, TX 78731",
-          "name": "Toxicity Check",
-          "role": "driver",
-          "startDate": 1499097600000,
-          "time": "11:00-12:00",
-          "volunteerId": "sarah@emailprovider.com",
-        },
-        Object {
-          "date": "July 7th",
-          "description": "Need to keep busy",
-          "id": 4,
-          "location": "1100 Congress Ave, Austin, TX 78701",
-          "name": "Weekend",
-          "role": "active friend",
-          "startDate": 1499403600000,
-          "time": "All Day",
-          "volunteerId": "sarah@emailprovider.com",
-        },
-      ]
-    }
-    disableVirtualization={false}
-    getItem={[Function]}
-    getItemCount={[Function]}
-    horizontal={false}
-    initialNumToRender={10}
-    keyExtractor={[Function]}
-    maxToRenderPerBatch={10}
-    numColumns={1}
-    onContentSizeChange={[Function]}
-    onEndReached={[Function]}
-    onEndReachedThreshold={2}
-    onLayout={[Function]}
-    onScroll={[Function]}
-    onScrollBeginDrag={[Function]}
-    onViewableItemsChanged={undefined}
-    removeClippedSubviews={true}
-    renderItem={[Function]}
-    renderScrollComponent={[Function]}
-    scrollEventThrottle={50}
-    stickyHeaderIndices={Array []}
-    updateCellsBatchingPeriod={50}
-    windowSize={21}
-  >
-    <View>
-      <View
-        onLayout={[Function]}
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "fontSize": 20,
-              "margin": 13,
-              "textAlign": "left",
-            }
-          }
-        >
-          July 3rd
-          : 
-          Toxicity Check
-        </Text>
-      </View>
-      <View
-        onLayout={[Function]}
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "fontSize": 20,
-              "margin": 13,
-              "textAlign": "left",
-            }
-          }
-        >
-          July 7th
-          : 
-          Weekend
-        </Text>
-      </View>
-      <View
-        style={
+    <RCTScrollView
+      data={
+        Array [
           Object {
-            "height": 0,
-          }
+            "date": "July 3rd",
+            "description": "Quick check",
+            "endDate": 1499101200000,
+            "id": 2,
+            "location": "6818 Austin Center Blvd, Austin, TX 78731",
+            "name": "Toxicity Check",
+            "role": "driver",
+            "startDate": 1499097600000,
+            "time": "11:00-12:00",
+            "volunteerId": "sarah@emailprovider.com",
+          },
+          Object {
+            "date": "July 7th",
+            "description": "Need to keep busy",
+            "id": 4,
+            "location": "1100 Congress Ave, Austin, TX 78701",
+            "name": "Weekend",
+            "role": "active friend",
+            "startDate": 1499403600000,
+            "time": "All Day",
+            "volunteerId": "sarah@emailprovider.com",
+          },
+        ]
+      }
+      dataWhichCouldChange={
+        Array [
+          undefined,
+          undefined,
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      numColumns={1}
+      onContentSizeChange={[Function]}
+      onEndReached={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onViewableItemsChanged={undefined}
+      removeClippedSubviews={true}
+      renderItem={[Function]}
+      renderScrollComponent={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      style={
+        Object {
+          "backgroundColor": "#FFF",
         }
-      />
-    </View>
-  </RCTScrollView>
+      }
+      updateCellsBatchingPeriod={50}
+      windowSize={21}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "marginBottom": 0,
+                  "marginLeft": 8,
+                  "marginRight": 8,
+                  "marginTop": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "padding": 4,
+                    "width": 56,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  3
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={Object {}}
+                >
+                  Mon
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "borderColor": "#CC5D5D",
+                      "borderRadius": 2,
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                      "flex": 1,
+                      "padding": 4,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  Toxicity Check
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {},
+                    ]
+                  }
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "marginBottom": 0,
+                  "marginLeft": 8,
+                  "marginRight": 8,
+                  "marginTop": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "padding": 4,
+                    "width": 56,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  7
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={Object {}}
+                >
+                  Fri
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "borderColor": "#CC5D5D",
+                      "borderRadius": 2,
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                      "flex": 1,
+                      "padding": 4,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  Weekend
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {},
+                    ]
+                  }
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "height": 0,
+            }
+          }
+        />
+      </View>
+    </RCTScrollView>
+  </View>
 </View>
 `;

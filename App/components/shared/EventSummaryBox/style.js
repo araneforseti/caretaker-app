@@ -16,7 +16,16 @@ const styles = StyleSheet.create({
   name: {
     fontWeight: 'bold'
   },
-  volunteer: {}
+  volunteer: {},
+  needVolunteerContainer: {
+    backgroundColor: theme.palette.secondaryColor
+  },
+  needVolunteerText: {
+    color: theme.palette.alternateTextColor
+  },
+  italic: {
+    fontStyle: 'italic'
+  }
 });
 
 export default styles;

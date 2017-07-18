@@ -1,0 +1,905 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllEventList should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <RCTScrollView
+      data={
+        Array [
+          Object {
+            "date": "July 1",
+            "description": "",
+            "endDate": 1498935600000,
+            "id": 1,
+            "location": "6818 Austin Center Blvd, Austin, TX 78731",
+            "name": "Chemotherapy",
+            "role": "driver",
+            "startDate": 1498932000000,
+            "time": "13:00-14:00",
+            "volunteer": "Jack",
+            "volunteerId": "jack@coolwebsite.com",
+          },
+          Object {
+            "date": "July 3rd",
+            "description": "Quick check",
+            "endDate": 1499101200000,
+            "id": 2,
+            "location": "6818 Austin Center Blvd, Austin, TX 78731",
+            "name": "Toxicity Check",
+            "role": "driver",
+            "startDate": 1499097600000,
+            "time": "11:00-12:00",
+            "volunteer": "Sarah",
+            "volunteerId": "sarah@emailprovider.com",
+          },
+          Object {
+            "date": "July 5th",
+            "description": "",
+            "endDate": 1499265000000,
+            "id": 3,
+            "location": "1120 S Lamar Blvd, Austin, TX 78704",
+            "name": "Checkin",
+            "role": "active friend",
+            "startDate": 1499261400000,
+            "time": "08:30-09:30",
+            "volunteer": "TBD",
+            "volunteerId": "TBD",
+          },
+          Object {
+            "date": "July 7th",
+            "description": "Need to keep busy",
+            "id": 4,
+            "location": "1100 Congress Ave, Austin, TX 78701",
+            "name": "Weekend",
+            "role": "active friend",
+            "startDate": 1499403600000,
+            "time": "All Day",
+            "volunteer": "Sarah",
+            "volunteerId": "sarah@emailprovider.com",
+          },
+          Object {
+            "date": "July 9th",
+            "description": "",
+            "endDate": 1499620500000,
+            "id": 5,
+            "location": "6818 Austin Center Blvd, Austin, TX 78731",
+            "name": "Chemotherapy",
+            "role": "driver",
+            "startDate": 1499613300000,
+            "time": "10:15-12:15",
+            "volunteer": "TBD",
+            "volunteerId": "TBD",
+          },
+          Object {
+            "date": "July 10th",
+            "description": "This is a very long description.  Chemotherapy (often abbreviated to chemo and sometimes CTX or CTx) is a category of cancer treatment that uses one or more anti-cancer drugs (chemotherapeutic agents) as part of a standardized chemotherapy regimen.",
+            "endDate": 1499706900000,
+            "id": 6,
+            "location": "6818 Austin Center Blvd, Austin, TX 78731",
+            "name": "Chemotherapy",
+            "role": "driver",
+            "startDate": 1499699700000,
+            "time": "10:15-12:15",
+            "volunteer": "Austin",
+            "volunteerId": "austin@yeehaw.com",
+          },
+        ]
+      }
+      dataWhichCouldChange={
+        Array [
+          "Jack",
+          "Sarah",
+          "TBD",
+          "Sarah",
+          "TBD",
+          "Austin",
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      numColumns={1}
+      onContentSizeChange={[Function]}
+      onEndReached={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onViewableItemsChanged={undefined}
+      removeClippedSubviews={true}
+      renderItem={[Function]}
+      renderScrollComponent={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      style={
+        Object {
+          "backgroundColor": "#FFF",
+        }
+      }
+      updateCellsBatchingPeriod={50}
+      windowSize={21}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "marginBottom": 0,
+                  "marginLeft": 8,
+                  "marginRight": 8,
+                  "marginTop": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "padding": 4,
+                    "width": 56,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  1
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={Object {}}
+                >
+                  Sat
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "borderColor": "#CC5D5D",
+                      "borderRadius": 2,
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                      "flex": 1,
+                      "padding": 4,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  Chemotherapy
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Jack
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "marginBottom": 0,
+                  "marginLeft": 8,
+                  "marginRight": 8,
+                  "marginTop": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "padding": 4,
+                    "width": 56,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  3
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={Object {}}
+                >
+                  Mon
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "borderColor": "#CC5D5D",
+                      "borderRadius": 2,
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                      "flex": 1,
+                      "padding": 4,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  Toxicity Check
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Sarah
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "marginBottom": 0,
+                  "marginLeft": 8,
+                  "marginRight": 8,
+                  "marginTop": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "padding": 4,
+                    "width": 56,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  5
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={Object {}}
+                >
+                  Wed
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "borderColor": "#CC5D5D",
+                      "borderRadius": 2,
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                      "flex": 1,
+                      "padding": 4,
+                    },
+                    Object {
+                      "backgroundColor": "#CC5D5D",
+                    },
+                  ]
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {
+                        "fontWeight": "bold",
+                      },
+                      Object {
+                        "color": "white",
+                      },
+                    ]
+                  }
+                >
+                  Checkin
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {},
+                      Object {
+                        "color": "white",
+                      },
+                      Object {
+                        "fontStyle": "italic",
+                      },
+                    ]
+                  }
+                >
+                  TBD
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "marginBottom": 0,
+                  "marginLeft": 8,
+                  "marginRight": 8,
+                  "marginTop": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "padding": 4,
+                    "width": 56,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  7
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={Object {}}
+                >
+                  Fri
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "borderColor": "#CC5D5D",
+                      "borderRadius": 2,
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                      "flex": 1,
+                      "padding": 4,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  Weekend
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Sarah
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "marginBottom": 0,
+                  "marginLeft": 8,
+                  "marginRight": 8,
+                  "marginTop": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "padding": 4,
+                    "width": 56,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  9
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={Object {}}
+                >
+                  Sun
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "borderColor": "#CC5D5D",
+                      "borderRadius": 2,
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                      "flex": 1,
+                      "padding": 4,
+                    },
+                    Object {
+                      "backgroundColor": "#CC5D5D",
+                    },
+                  ]
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {
+                        "fontWeight": "bold",
+                      },
+                      Object {
+                        "color": "white",
+                      },
+                    ]
+                  }
+                >
+                  Chemotherapy
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {},
+                      Object {
+                        "color": "white",
+                      },
+                      Object {
+                        "fontStyle": "italic",
+                      },
+                    ]
+                  }
+                >
+                  TBD
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "marginBottom": 0,
+                  "marginLeft": 8,
+                  "marginRight": 8,
+                  "marginTop": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "padding": 4,
+                    "width": 56,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  10
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={Object {}}
+                >
+                  Mon
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "borderColor": "#CC5D5D",
+                      "borderRadius": 2,
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                      "flex": 1,
+                      "padding": 4,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  Chemotherapy
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#CC5D5D",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  Austin
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "height": 0,
+            }
+          }
+        />
+      </View>
+    </RCTScrollView>
+  </View>
+  <ThemeProvider
+    uiTheme={
+      Object {
+        "palette": Object {
+          "accentColor": "#FF7575",
+          "alternateTextColor": "white",
+          "primaryColor": "#FF7575",
+          "primaryTextColor": "black",
+          "secondaryColor": "#CC5D5D",
+        },
+        "spacing": Object {
+          "miniActionButtonSize": 42,
+        },
+        "toolbar": Object {
+          "container": Object {
+            "height": 50,
+          },
+        },
+        "typography": Object {
+          "fontSize": Object {
+            "display": 25,
+          },
+          "subheading": Object {
+            "fontSize": 16,
+            "fontWeight": "normal",
+            "lineHeight": 24,
+          },
+        },
+      }
+    }
+  >
+    <ActionButton
+      onPress={[Function]}
+    />
+  </ThemeProvider>
+</View>
+`;
