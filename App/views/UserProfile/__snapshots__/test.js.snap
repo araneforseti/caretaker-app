@@ -1,0 +1,346 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Profile snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ThemeProvider
+    uiTheme={
+      Object {
+        "palette": Object {
+          "accentColor": "#FF7575",
+          "alternateTextColor": "white",
+          "primaryColor": "#FF7575",
+          "primaryTextColor": "black",
+          "secondaryColor": "#CC5D5D",
+        },
+        "spacing": Object {
+          "miniActionButtonSize": 42,
+        },
+        "toolbar": Object {
+          "container": Object {
+            "height": 50,
+          },
+        },
+        "typography": Object {
+          "fontSize": Object {
+            "display": 25,
+          },
+          "subheading": Object {
+            "fontSize": 16,
+            "fontWeight": "normal",
+            "lineHeight": 24,
+          },
+        },
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "#F5FCFF",
+        "flex": 1,
+        "justifyContent": "flex-start",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontSize": 24,
+          "margin": 15,
+          "textAlign": "center",
+        }
+      }
+    >
+      User Profile
+    </Text>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "margin": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "marginTop": 10,
+          }
+        }
+      >
+        Info
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Name: 
+        S
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Email: 
+        s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Phone: 
+        123-456-7890
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "margin": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "marginTop": 10,
+          }
+        }
+      >
+        Receive Notifications via:
+      </Text>
+      <ThemeProvider
+        uiTheme={
+          Object {
+            "palette": Object {
+              "accentColor": "#FF7575",
+              "alternateTextColor": "white",
+              "primaryColor": "#FF7575",
+              "primaryTextColor": "black",
+              "secondaryColor": "#CC5D5D",
+            },
+            "spacing": Object {
+              "miniActionButtonSize": 42,
+            },
+            "toolbar": Object {
+              "container": Object {
+                "height": 50,
+              },
+            },
+            "typography": Object {
+              "fontSize": Object {
+                "display": 25,
+              },
+              "subheading": Object {
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 24,
+              },
+            },
+          }
+        }
+      />
+      <ThemeProvider
+        uiTheme={
+          Object {
+            "palette": Object {
+              "accentColor": "#FF7575",
+              "alternateTextColor": "white",
+              "primaryColor": "#FF7575",
+              "primaryTextColor": "black",
+              "secondaryColor": "#CC5D5D",
+            },
+            "spacing": Object {
+              "miniActionButtonSize": 42,
+            },
+            "toolbar": Object {
+              "container": Object {
+                "height": 50,
+              },
+            },
+            "typography": Object {
+              "fontSize": Object {
+                "display": 25,
+              },
+              "subheading": Object {
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 24,
+              },
+            },
+          }
+        }
+      />
+      <ThemeProvider
+        uiTheme={
+          Object {
+            "palette": Object {
+              "accentColor": "#FF7575",
+              "alternateTextColor": "white",
+              "primaryColor": "#FF7575",
+              "primaryTextColor": "black",
+              "secondaryColor": "#CC5D5D",
+            },
+            "spacing": Object {
+              "miniActionButtonSize": 42,
+            },
+            "toolbar": Object {
+              "container": Object {
+                "height": 50,
+              },
+            },
+            "typography": Object {
+              "fontSize": Object {
+                "display": 25,
+              },
+              "subheading": Object {
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 24,
+              },
+            },
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "margin": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "marginTop": 10,
+          }
+        }
+      >
+        Receive Notifications for:
+      </Text>
+      <ThemeProvider
+        uiTheme={
+          Object {
+            "palette": Object {
+              "accentColor": "#FF7575",
+              "alternateTextColor": "white",
+              "primaryColor": "#FF7575",
+              "primaryTextColor": "black",
+              "secondaryColor": "#CC5D5D",
+            },
+            "spacing": Object {
+              "miniActionButtonSize": 42,
+            },
+            "toolbar": Object {
+              "container": Object {
+                "height": 50,
+              },
+            },
+            "typography": Object {
+              "fontSize": Object {
+                "display": 25,
+              },
+              "subheading": Object {
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 24,
+              },
+            },
+          }
+        }
+      />
+      <ThemeProvider
+        uiTheme={
+          Object {
+            "palette": Object {
+              "accentColor": "#FF7575",
+              "alternateTextColor": "white",
+              "primaryColor": "#FF7575",
+              "primaryTextColor": "black",
+              "secondaryColor": "#CC5D5D",
+            },
+            "spacing": Object {
+              "miniActionButtonSize": 42,
+            },
+            "toolbar": Object {
+              "container": Object {
+                "height": 50,
+              },
+            },
+            "typography": Object {
+              "fontSize": Object {
+                "display": 25,
+              },
+              "subheading": Object {
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 24,
+              },
+            },
+          }
+        }
+      />
+      <ThemeProvider
+        uiTheme={
+          Object {
+            "palette": Object {
+              "accentColor": "#FF7575",
+              "alternateTextColor": "white",
+              "primaryColor": "#FF7575",
+              "primaryTextColor": "black",
+              "secondaryColor": "#CC5D5D",
+            },
+            "spacing": Object {
+              "miniActionButtonSize": 42,
+            },
+            "toolbar": Object {
+              "container": Object {
+                "height": 50,
+              },
+            },
+            "typography": Object {
+              "fontSize": Object {
+                "display": 25,
+              },
+              "subheading": Object {
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 24,
+              },
+            },
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
