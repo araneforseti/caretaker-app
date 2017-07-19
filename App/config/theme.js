@@ -1,11 +1,13 @@
 const PINK = '#FF7575';
 const DARK_PINK = '#CC5D5D';
+const LIGHT_PINK = '#FFC0C0';
 
 const theme = {
   palette: {
     primaryColor: PINK,
     accentColor: PINK,
     secondaryColor: DARK_PINK,
+    lightColor: LIGHT_PINK,
     primaryTextColor: 'black',
     alternateTextColor: 'white'
   },

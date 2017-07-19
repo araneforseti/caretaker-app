@@ -847,6 +847,7 @@ exports[`EventList should render correctly 1`] = `
         "palette": Object {
           "accentColor": "#FF7575",
           "alternateTextColor": "white",
+          "lightColor": "#FFC0C0",
           "primaryColor": "#FF7575",
           "primaryTextColor": "black",
           "secondaryColor": "#CC5D5D",
