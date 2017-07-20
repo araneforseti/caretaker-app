@@ -27,7 +27,15 @@ describe('Navigation', () => {
         expect(renderer.create(<Navigation />)).toMatchSnapshot();
     })
 
-    it('should get the permissions from the user gateway', () => {
+    it('should get the current user', () => {
+      const spy = jest.spyOn(UserGateway, 'getCurrentUser');
+
+      renderer.create(<Navigation />)
+
+      expect(spy).toHaveBeenCalled();
+    })
+
+    it('should get the permissions from the user', () => {
         login.as(HELPER);
 
         const navigation = renderer

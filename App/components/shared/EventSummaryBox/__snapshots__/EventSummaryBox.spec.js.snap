@@ -3,14 +3,17 @@
 exports[`<EventSummaryBox /> should render correctly 1`] = `
 <View
   style={
-    Object {
-      "borderColor": "#CC5D5D",
-      "borderRadius": 2,
-      "borderStyle": "solid",
-      "borderWidth": 1,
-      "flex": 1,
-      "padding": 4,
-    }
+    Array [
+      Object {
+        "borderColor": "#CC5D5D",
+        "borderRadius": 2,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "flex": 1,
+        "padding": 4,
+      },
+      false,
+    ]
   }
 >
   <Text
@@ -25,6 +28,7 @@ exports[`<EventSummaryBox /> should render correctly 1`] = `
         Object {
           "fontWeight": "bold",
         },
+        false,
       ]
     }
   >
@@ -40,6 +44,8 @@ exports[`<EventSummaryBox /> should render correctly 1`] = `
           "color": "#CC5D5D",
         },
         Object {},
+        false,
+        false,
       ]
     }
   >
