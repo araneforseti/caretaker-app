@@ -4,9 +4,14 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "cmb": "node ./bin/configureMountebank.js",
+    "mb": "./bin/mb.sh start && npm run cmb",
+    "android": "./bin/fixEmulatorDate.sh  && npm run mb && react-native run-android"
   },
   "dependencies": {
+    "dateformat": "^2.0.0",
+    "immutable": "^3.8.1",
     "react": "16.0.0-alpha.6",
     "react-native": "0.44.2",
     "react-native-material-ui": "^1.12.0",
@@ -17,7 +22,10 @@
     "babel-jest": "20.0.3",
     "babel-preset-react-native": "1.9.2",
     "jest": "20.0.4",
-    "react-test-renderer": "16.0.0-alpha.6"
+    "mountebank": "^1.11.0",
+    "pact": "^2.6.0",
+    "react-test-renderer": "16.0.0-alpha.6",
+    "unirest": "^0.5.1"
   },
   "jest": {
     "preset": "react-native"

@@ -1,4 +1,5 @@
 import UserGateway from './index.js';
+import { Record } from 'immutable';
 
 describe('UserGateway', () => {
 
@@ -12,5 +13,14 @@ describe('UserGateway', () => {
 
     it('should assign TBD as a name when TBD is the identifier', () => {
         expect(UserGateway.getName('TBD')).toBe('TBD');
+    });
+
+    it('should get the current user as an immutable record', () => {
+        UserGateway.login('s');
+
+        const user =  UserGateway.getCurrentUser();
+
+        //Record.isRecord is in the immutable@4.0.0 release candidate
+        expect(user instanceof Record).toBe(true);
     })
 });

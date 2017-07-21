@@ -1,0 +1,379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CaretakerRolesList /> should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "description": "Gives rides to things",
+          "id": 1,
+          "name": "Driver",
+        },
+        Object {
+          "description": "Helps coordinate people sign ups",
+          "id": 2,
+          "name": "Coordinator",
+        },
+        Object {
+          "description": "Picks up groceries",
+          "id": 3,
+          "name": "Groceries",
+        },
+        Object {
+          "description": "Gets focus out and active (eg, walks) during vulnerable times",
+          "id": 4,
+          "name": "Active Friend",
+        },
+        Object {
+          "description": "Cooks food cause yum",
+          "id": 5,
+          "name": "Chef",
+        },
+      ]
+    }
+    dataWhichCouldChange={
+      Array [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onContentSizeChange={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onViewableItemsChanged={undefined}
+    removeClippedSubviews={true}
+    renderItem={[Function]}
+    renderScrollComponent={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <ThemeProvider
+            uiTheme={
+              Object {
+                "palette": Object {
+                  "accentColor": "#FF7575",
+                  "alternateTextColor": "white",
+                  "lightColor": "#FFC0C0",
+                  "primaryColor": "#FF7575",
+                  "primaryTextColor": "black",
+                  "secondaryColor": "#CC5D5D",
+                },
+                "spacing": Object {
+                  "miniActionButtonSize": 42,
+                },
+                "toolbar": Object {
+                  "container": Object {
+                    "height": 50,
+                  },
+                },
+                "typography": Object {
+                  "fontSize": Object {
+                    "display": 25,
+                  },
+                  "subheading": Object {
+                    "fontSize": 16,
+                    "fontWeight": "normal",
+                    "lineHeight": 24,
+                  },
+                },
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <ThemeProvider
+            uiTheme={
+              Object {
+                "palette": Object {
+                  "accentColor": "#FF7575",
+                  "alternateTextColor": "white",
+                  "lightColor": "#FFC0C0",
+                  "primaryColor": "#FF7575",
+                  "primaryTextColor": "black",
+                  "secondaryColor": "#CC5D5D",
+                },
+                "spacing": Object {
+                  "miniActionButtonSize": 42,
+                },
+                "toolbar": Object {
+                  "container": Object {
+                    "height": 50,
+                  },
+                },
+                "typography": Object {
+                  "fontSize": Object {
+                    "display": 25,
+                  },
+                  "subheading": Object {
+                    "fontSize": 16,
+                    "fontWeight": "normal",
+                    "lineHeight": 24,
+                  },
+                },
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <ThemeProvider
+            uiTheme={
+              Object {
+                "palette": Object {
+                  "accentColor": "#FF7575",
+                  "alternateTextColor": "white",
+                  "lightColor": "#FFC0C0",
+                  "primaryColor": "#FF7575",
+                  "primaryTextColor": "black",
+                  "secondaryColor": "#CC5D5D",
+                },
+                "spacing": Object {
+                  "miniActionButtonSize": 42,
+                },
+                "toolbar": Object {
+                  "container": Object {
+                    "height": 50,
+                  },
+                },
+                "typography": Object {
+                  "fontSize": Object {
+                    "display": 25,
+                  },
+                  "subheading": Object {
+                    "fontSize": 16,
+                    "fontWeight": "normal",
+                    "lineHeight": 24,
+                  },
+                },
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <ThemeProvider
+            uiTheme={
+              Object {
+                "palette": Object {
+                  "accentColor": "#FF7575",
+                  "alternateTextColor": "white",
+                  "lightColor": "#FFC0C0",
+                  "primaryColor": "#FF7575",
+                  "primaryTextColor": "black",
+                  "secondaryColor": "#CC5D5D",
+                },
+                "spacing": Object {
+                  "miniActionButtonSize": 42,
+                },
+                "toolbar": Object {
+                  "container": Object {
+                    "height": 50,
+                  },
+                },
+                "typography": Object {
+                  "fontSize": Object {
+                    "display": 25,
+                  },
+                  "subheading": Object {
+                    "fontSize": 16,
+                    "fontWeight": "normal",
+                    "lineHeight": 24,
+                  },
+                },
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <ThemeProvider
+            uiTheme={
+              Object {
+                "palette": Object {
+                  "accentColor": "#FF7575",
+                  "alternateTextColor": "white",
+                  "lightColor": "#FFC0C0",
+                  "primaryColor": "#FF7575",
+                  "primaryTextColor": "black",
+                  "secondaryColor": "#CC5D5D",
+                },
+                "spacing": Object {
+                  "miniActionButtonSize": 42,
+                },
+                "toolbar": Object {
+                  "container": Object {
+                    "height": 50,
+                  },
+                },
+                "typography": Object {
+                  "fontSize": Object {
+                    "display": 25,
+                  },
+                  "subheading": Object {
+                    "fontSize": 16,
+                    "fontWeight": "normal",
+                    "lineHeight": 24,
+                  },
+                },
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;

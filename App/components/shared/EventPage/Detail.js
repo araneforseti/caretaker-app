@@ -4,10 +4,18 @@ import { Text, View } from 'react-native';
 import styles from './styles';
 import ListItem from '../../material-ui/ListItem';
 
+const renderText = (text, index) => <Text key={index} style={styles.detailText}>{text}</Text>;
+
 export default function Detail( { text, icon, center } ) {
+  let textsToRender;
+  if(text.map)
+    textsToRender = text.map((t, index) => renderText(t, index));
+  else
+    textsToRender = renderText(text);
+
   return <ListItem
     leftElement={icon}
-    centerElement={<Text style={styles.detailText}>{text}</Text>}
+    centerElement={<View>{textsToRender}</View>}
     style={ {
       container: styles.detail,
       contentViewContainer: {
@@ -18,7 +26,7 @@ export default function Detail( { text, icon, center } ) {
 }
 
 Detail.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   icon: PropTypes.string,
   center: PropTypes.bool
 };

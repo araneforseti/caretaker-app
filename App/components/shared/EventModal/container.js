@@ -5,7 +5,7 @@ import EventGateway from '../../../data/EventGateway';
 export var ContainerFor = (EventModal) => class extends Component {
 
     _onPickUpEvent = () => {
-        EventGateway.pickUpEvent(this.props.event.id, UserGateway.currentUser.identifier);
+        EventGateway.pickUpEvent(this.props.event.id, UserGateway.getCurrentUser().identifier);
     };
 
     _onDropEvent = () => {
