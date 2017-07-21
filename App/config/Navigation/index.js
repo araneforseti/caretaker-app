@@ -14,7 +14,7 @@ export default class Navigation extends Component {
     }
 
     componentDidMount() {
-        const user = UserGateway.currentUser;
+        const user = UserGateway.getCurrentUser();
         this.setState({
           userType: user.permission,
           userName: user.name,

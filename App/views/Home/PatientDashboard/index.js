@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import {
-  FlatList,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-import EventListContainer from '../../../components/EventList/';
+import { View } from 'react-native';
+import AllEventList from '../../../components/AllEventList';
+
+import styles from './styles';
 
 export default class PatientDashboard extends Component {
   static navigationOptions = {
@@ -13,22 +10,8 @@ export default class PatientDashboard extends Component {
   };
 
   render() {
-    return (
-        <View style={styles.container}>
-            <EventListContainer />
-        </View>
-    );
+    return <View style={styles.container}>
+      <AllEventList />
+    </View>;
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#F5FCFF',
-  },
-  title: {
-    fontSize: 24,
-    textAlign: 'center',
-    margin: 15,
-  },
-});

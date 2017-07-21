@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import {
-  FlatList,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-import AssignedEventListContainer from '../../../components/AssignedEventList/';
-import UnassignedEventListContainer from '../../../components/UnassignedEventList/';
+import { View } from 'react-native';
+import AssignedEventList from '../../../components/AssignedEventList';
+import UnassignedEventList from '../../../components/UnassignedEventList';
+
+import styles from './styles';
 
 export default class HelperDashboard extends Component {
   static navigationOptions = {
@@ -14,23 +11,9 @@ export default class HelperDashboard extends Component {
   };
 
   render() {
-    return (
-        <View style={styles.container}>
-            <AssignedEventListContainer />
-            <UnassignedEventListContainer />
-        </View>
-    );
+    return <View style={styles.container}>
+      <AssignedEventList />
+      <UnassignedEventList />
+    </View>;
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#F5FCFF',
-  },
-  title: {
-    fontSize: 24,
-    textAlign: 'center',
-    margin: 15,
-  },
-});

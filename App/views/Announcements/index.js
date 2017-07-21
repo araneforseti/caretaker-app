@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 import ContainerFor from './container.js';
-import renderIf from '../../utils/renderif.js';
+import { renderIf } from '../../utils/helpers';
 import ActionButton from '../../components/material-ui/ActionButton';
 import ScreenWithToolbar from '../../components/shared/ScreenWithToolbar';
 
@@ -30,7 +30,7 @@ const Announcements = (props) => {
         />
     )
 
-    const addAnnouncementButton = renderIf(props.isUserAdmin,
+    const addAnnouncementButton = renderIf(props.isUserAdmin, () =>
         <ActionButton onPress={props.onAddAnnouncement} />
     );
 
