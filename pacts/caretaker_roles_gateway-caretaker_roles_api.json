@@ -1,0 +1,91 @@
+{
+  "consumer": {
+    "name": "Caretaker Roles Gateway"
+  },
+  "provider": {
+    "name": "Caretaker Roles API"
+  },
+  "interactions": [
+    {
+      "description": "A request for all the roles",
+      "providerState": "I have all the roles for a given focus",
+      "request": {
+        "method": "GET",
+        "path": "/roles",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "roles": [
+            {
+              "id": 1,
+              "name": "Driver",
+              "description": "Gives rides to things"
+            },
+            {
+              "id": 2,
+              "name": "Coordinator",
+              "description": "Helps coordinate people sign ups"
+            },
+            {
+              "id": 3,
+              "name": "Groceries",
+              "description": "Picks up groceries"
+            },
+            {
+              "id": 4,
+              "name": "Active Friend",
+              "description": "Gets focus out and active (eg, walks) during vulnerable times"
+            },
+            {
+              "id": 5,
+              "name": "Chef",
+              "description": "Cooks food cause yum"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "Data for a new role",
+      "providerState": "_",
+      "request": {
+        "method": "POST",
+        "path": "/roles",
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "newRoleData": {
+            "name": "Developer",
+            "description": "Writes code but not tests"
+          }
+        }
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+        },
+        "body": {
+          "newRole": {
+            "id": 6,
+            "name": "Developer",
+            "description": "Writes code but not tests"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

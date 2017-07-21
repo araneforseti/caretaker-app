@@ -6,8 +6,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "cmb": "node ./bin/configureMountebank.js",
-    "mb": "./bin/runMountebank.sh && npm run cmb",
-    "android": "npm run mb && react-native run-android"
+    "mb": "./bin/mb.sh start && npm run cmb",
+    "android": "./bin/fixEmulatorDate.sh  && npm run mb && react-native run-android"
   },
   "dependencies": {
     "dateformat": "^2.0.0",
@@ -23,6 +23,7 @@
     "babel-preset-react-native": "1.9.2",
     "jest": "20.0.4",
     "mountebank": "^1.11.0",
+    "pact": "^2.6.0",
     "react-test-renderer": "16.0.0-alpha.6",
     "unirest": "^0.5.1"
   },

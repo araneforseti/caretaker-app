@@ -19,5 +19,15 @@ module.exports = {
     id: 5,
     name: 'Chef',
     description: 'Cooks food cause yum'
-  }]
+  }],
+
+  newRoleData: {
+    name: 'Developer',
+    description: 'Writes code but not tests'
+  },
+  newRole: {
+    id: 6,
+    name: 'Developer',
+    description: 'Writes code but not tests'
+  }
 };
